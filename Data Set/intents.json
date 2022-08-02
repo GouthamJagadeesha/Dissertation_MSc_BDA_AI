@@ -5,7 +5,8 @@
         "patterns": [ "Hi", "Hey", "How are you", "Is anyone there?", "Hello", "Good day" ],
         "responses": [ "Hi there, what can I do for you?", "Hi there, how can I help?" ],
         "context_set": ""
-      }
+      },
+      
       {
         "tag": "Cuts",
         "patterns": [ "What to do if Cuts?", "How to cure Cuts?", "Which medicine to apply for Cuts?", "what to apply on cuts?", "Cuts" ],
