@@ -4,7 +4,6 @@ RUN	apt update -y &&\
 	pip install flask &&\
 	pip install nltk &&\
 	pip install numpy &&\
-	pip install pickle &&\
     pip install keras &&\
     pip install random
 
