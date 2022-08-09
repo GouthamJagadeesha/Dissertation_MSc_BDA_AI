@@ -5,7 +5,6 @@ RUN	apt update -y &&\
 	pip install nltk &&\
 	pip install numpy &&\
 	pip install keras &&\
-	pip install random
 
 COPY . .
 
