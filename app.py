@@ -1,5 +1,5 @@
 import nltk
-#nltk.download('popular')
+nltk.download('popular')
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 import pickle
@@ -46,8 +46,7 @@ def predict_class(sentence, model):
     results.sort(key=lambda x: x[1], reverse=True)
     return_list = []
     for r in results:
-        for n in r:
-            return_list.append({"intent": classes[n[0]], "probability": str(n[1])})
+        return_list.append({"intent": classes[r[0]], "probability": str(r[1])})
         print(return_list)
     return return_list
 
