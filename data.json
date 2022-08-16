@@ -8,7 +8,7 @@
          },
          {
           "tag": "botstatus",
-          "patterns": ["How are you doing?","Whats up","are you fine","How are you?"],
+          "patterns": ["How are you?","Whats up","are you fine"],
           "responses": ["I am fine.Thanks for asking.","I am doing good."],
           "context": [""]
          },
