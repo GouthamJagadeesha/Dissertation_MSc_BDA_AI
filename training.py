@@ -3,6 +3,7 @@ from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 import json
 import pickle
+from matplotlib import pyplot
 
 import numpy as np
 from keras.models import Sequential
@@ -95,3 +96,6 @@ hist = model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=5,
 model.save('model.h5', hist)
 
 print("model created")
+# plot metrics
+# pyplot.plot(hist.history['accuracy'])
+# pyplot.show()
