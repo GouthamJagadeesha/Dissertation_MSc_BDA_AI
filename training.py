@@ -7,10 +7,9 @@ from matplotlib import pyplot
 
 import numpy as np
 from keras.models import Sequential
-from keras.layers import Dense, Activation, Dropout
+from keras.layers import Dense, Dropout
 from keras.optimizers import SGD
 import random
-from sklearn.metrics import confusion_matrix
 
 words=[]
 classes = []
@@ -45,7 +44,7 @@ words = sorted(list(set(words)))
 # sort classes
 classes = sorted(list(set(classes)))
 # documents = combination between patterns and intents
-print (len(documents), "documents")
+print (len(documents), "documents", documents)
 # classes = intents
 print (len(classes), "classes", classes)
 # words = all words, vocabulary
@@ -99,10 +98,12 @@ sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 
 #fitting and saving the model 
-hist = model.fit(np.array(train_x), np.array(train_y), epochs=500, batch_size=5, verbose=1)
+hist = model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=5, verbose=1)
 model.save('model.h5', hist)
 
 print("model created")
 #plot metrics
 pyplot.plot(hist.history['accuracy'])
+pyplot.ylabel('Accuracy')
+pyplot.xlabel('Epochs')
 pyplot.show() 

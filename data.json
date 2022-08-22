@@ -48,7 +48,7 @@
          {
           "tag": "goodbye",
           "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time", "cya", "take care"],
-          "responses": ["See ya! Thanks for visiting MedicBot. Stay safe."],
+          "responses": ["See ya! Thanks for visiting MedicBot. Stay safe. Please provide your feedback here: https://www.google.com/ "],
           "context": [""]
          },
          {
