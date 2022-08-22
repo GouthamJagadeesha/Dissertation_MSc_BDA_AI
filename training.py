@@ -10,6 +10,7 @@ from keras.models import Sequential
 from keras.layers import Dense, Activation, Dropout
 from keras.optimizers import SGD
 import random
+from sklearn.metrics import confusion_matrix
 
 words=[]
 classes = []
@@ -28,11 +29,17 @@ for intent in intents['intents']:
         #add documents in the corpus
         documents.append((w, intent['tag']))
 
+
         # add to our classes list
+
         if intent['tag'] not in classes:
+
             classes.append(intent['tag'])
 
+
+
 # lemmaztize and lower each word and remove duplicates
+
 words = [lemmatizer.lemmatize(w.lower()) for w in words if w not in ignore_words]
 words = sorted(list(set(words)))
 # sort classes
@@ -92,10 +99,10 @@ sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 
 #fitting and saving the model 
-hist = model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=5, verbose=1)
+hist = model.fit(np.array(train_x), np.array(train_y), epochs=500, batch_size=5, verbose=1)
 model.save('model.h5', hist)
 
 print("model created")
-# plot metrics
-# pyplot.plot(hist.history['accuracy'])
-# pyplot.show()
+#plot metrics
+pyplot.plot(hist.history['accuracy'])
+pyplot.show() 

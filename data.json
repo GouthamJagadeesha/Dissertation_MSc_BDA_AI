@@ -2,13 +2,13 @@
     "intents": [
          {
           "tag": "greeting",
-          "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+          "patterns": ["Hi there", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
           "responses": ["Hello, thanks for visiting MedicBot. How can I help you?", "Hi, how can I help?"],
           "context": [""]
          },
          {
           "tag": "botstatus",
-          "patterns": ["How are you?","Whats up","are you fine"],
+          "patterns": ["How are you?","are you fine"],
           "responses": ["I am fine.Thanks for asking.","I am doing good."],
           "context": [""]
          },
@@ -19,7 +19,7 @@
          },
         {
         "tag": "options",
-        "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered", "help", "I need help", "can you help me"],
+        "patterns": ["How can you help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered", "help", "I need help", "can you help me"],
         "responses": ["I can guide you through first aid information regarding various medical emergencies"],
         "context": [""]
          },
@@ -31,7 +31,7 @@
          },
          {
           "tag": "sad",
-          "patterns": ["i am sad ","i am upset","i have a problem","i am not okay", "I am feeling sad", "feeling sad"],
+          "patterns": ["sad ","upset","bad day"],
           "responses": ["No problem. Everything will be okay",
            "'There is only one happiness in life, to love and be loved' \n- George Sand.",
            "'Cry. Forgive. Learn. Move on. \nLet your tears water the seeds of your future happiness' \n- Steve Maraboli",
@@ -47,8 +47,8 @@
          },
          {
           "tag": "goodbye",
-          "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
-          "responses": ["See ya! Thanks for visiting MedicBot","Have a nice day"],
+          "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time", "cya", "take care"],
+          "responses": ["See ya! Thanks for visiting MedicBot. Stay safe."],
           "context": [""]
          },
          {
@@ -59,19 +59,19 @@
          },
          {"tag": "Cuts",
          "patterns": ["What to do if Cuts?", "How to cure Cuts?", "Which medicine to apply for Cuts?", "what to apply on cuts?", "Cuts"],
-         "responses": ["Wash the cut properly to prevent infection and stop the bleeding by applying pressure for 1-2minutes until bleeding stops. Apply Petroleum Jelly to make sure that the wound is moist for quick healing. Finally cover the cut with a sterile bandage. Pain relievers such as acetaminophen can be applied."],
+         "responses": ["Wash the cut properly to prevent infection and stop the bleeding by applying pressure for 1-2 minutes until bleeding stops. Apply Petroleum Jelly to make sure that the wound is moist for quick healing. Finally cover the cut with a sterile bandage. Pain relievers such as acetaminophen can be applied."],
          "context": [""]
         },
 
         {"tag": "Abrasions",
          "patterns": ["how do you treat abrasions?", "Do Abrasions cause scars?", "Abrasions","Abrasion", "what to do if abrasions?", "Which medicine to apply for abrasions?", "How to cure abrasions?"],
-         "responses": ["Begin with washed hands.Gently clean the area with cool to lukewarm water and mild soap. Remove dirt or other particles from the wound using sterilized tweezers.For a mild scrape that’s not bleeding, leave the wound uncovered.If the wound is bleeding, use a clean cloth or bandage, and apply gentle pressure to the area to stop any bleeding.Cover a wound that bled with a thin layer of topical antibiotic ointment, like Bacitracin, or a sterile moisture barrier ointment, like Aquaphor. Cover it with a clean bandage or gauze. Gently clean the wound and change the ointment and bandage once per day.Watch the area for signs of infection, like pain or redness and swelling. See your doctor if you suspect infection."],
+         "responses": ["Begin with washed hands. Gently clean the area with cool to lukewarm water and mild soap. Remove dirt or other particles from the wound using sterilized tweezers. For a mild scrape that is not bleeding, leave the wound uncovered. If the wound is bleeding, use a clean cloth or bandage, and apply gentle pressure to the area to stop any bleeding. Cover a wound that bled with a thin layer of topical antibiotic ointment, like Bacitracin, or a sterile moisture barrier ointment, like Aquaphor. Cover it with a clean bandage or gauze. Gently clean the wound and change the ointment and bandage once per day. Watch the area for signs of infection, like pain or redness and swelling. See your doctor if you suspect infection."],
          "context": [""]
         },
 
         {"tag": "stings",
          "patterns": ["How do you treat Sting?", "Stings", "What to do if you get a sting?", "Which medicine to apply if sting?", "sting"],
-         "responses": ["Remove any stingers immediately. Some experts recommend scraping out the stinger with a credit card. Applying ice to the site may provide some mild relief. Apply ice for 20 minutes once every hour as needed. Wrap the ice in a towel or keep a cloth between the ice and skin to keep from freezing the skin. Taking an antihistamine such as diphenhydramine (Benadryl) or a nonsedating one such as loratadine (Claritin) will help with itching and swelling. Take acetaminophen (Tylenol) or ibuprofen (Motrin)for pain relief as needed. Wash the sting site with soap and water. Placing hydrocortisone cream on the sting can help relieve redness, itching, and swelling."],
+         "responses": ["Remove any stingers immediately. Some experts recommend scraping out the stinger with a credit card. Applying ice to the site may provide some mild relief. Apply ice for 20 minutes once every hour as needed. Wrap the ice in a towel or keep a cloth between the ice and skin to keep from freezing the skin. Taking an antihistamine such as diphenhydramine (Benadryl) or a nonsedating one such as loratadine (Claritin) will help with itching and swelling. Take acetaminophen (Tylenol) or ibuprofen (Motrin) for pain relief as needed. Wash the sting site with soap and water. Placing hydrocortisone cream on the sting can help relieve redness, itching, and swelling."],
          "context": [""]
         },
 
@@ -83,7 +83,7 @@
 
         {"tag": "Sprains",
          "patterns": ["How do you treat a sprain?", "what to do if i get a sprain?", "Which cream to apply if i get a sprain?", "Which medicine to apply if I get a sprain?", "sprains", "sprain"],
-         "responses": ["Use an ice pack or ice slush bath immediately for 15 to 20 minutes and repeat every two to three hours while you're awake. To help stop swelling, compress the ankle with an elastic bandage until the swelling stops. In most cases, pain relievers — such as ibuprofen (Advil, Motrin IB, others) or naproxen sodium (Aleve, others) or acetaminophen (Tylenol, others) are enough to manage the pain of a sprained ankle."],
+         "responses": ["Use an ice pack or ice slush bath immediately for 15 to 20 minutes and repeat every two to three hours while you're awake. To help stop swelling, compress the ankle with an elastic bandage until the swelling stops. In most cases, pain relievers such as ibuprofen (Advil, Motrin IB, others) or naproxen sodium (Aleve, others) or acetaminophen (Tylenol, others) are enough to manage the pain of a sprained ankle."],
          "context": [""]
         },
 
@@ -263,13 +263,13 @@
 
         {"tag": "Head Injury",
          "patterns": ["How do you treat a head Injury?", "what to do if i get a Head Injury?", "Which medicine to take if I get injured in the head?", "How to cure Head Injury?"],
-         "responses": ["Apply firm pressure to the wound with sterile gauze or a clean cloth. But don't apply direct pressure to the wound if you suspect a skull fracture. Watch for changes in breathing and alertness. If the person shows no signs of circulation — no breathing, coughing or movement — begin CPR."],
+         "responses": ["Apply firm pressure to the wound with sterile gauze or a clean cloth. But don't apply direct pressure to the wound if you suspect a skull fracture. Watch for changes in breathing and alertness. If the person shows no signs of circulation no breathing, coughing or movement begin CPR."],
          "context": [""]
         },
 
         {"tag": "Fainting",
          "patterns": ["How do you treat Faint?", "what to do if i feel like Fainting?", "Which medicine to take if I get a Faint?", "How to cure Fainting?"],
-         "responses": ["Position the person on his or her back. If there are no injuries and the person is breathing, raise the person's legs above heart level — about 12 inches (30 centimeters) — if possible. Loosen belts, collars or other constrictive clothing. To reduce the chance of fainting again, don't get the person up too quickly."],
+         "responses": ["Position the person on his or her back. If there are no injuries and the person is breathing, raise the person's legs above heart level about 12 inches (30 centimeters) if possible. Loosen belts, collars or other constrictive clothing. To reduce the chance of fainting again, don't get the person up too quickly."],
          "context": [""]
         },
 
