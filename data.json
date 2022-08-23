@@ -48,7 +48,7 @@
          {
           "tag": "goodbye",
           "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time", "cya", "take care"],
-          "responses": ["See ya! Thanks for visiting MedicBot. Stay safe. Please provide your feedback here: https://www.google.com/ "],
+          "responses": ["See ya! Thanks for visiting MedicBot. Stay safe."],
           "context": [""]
          },
          {
@@ -62,7 +62,11 @@
          "responses": ["Wash the cut properly to prevent infection and stop the bleeding by applying pressure for 1-2 minutes until bleeding stops. Apply Petroleum Jelly to make sure that the wound is moist for quick healing. Finally cover the cut with a sterile bandage. Pain relievers such as acetaminophen can be applied."],
          "context": [""]
         },
-
+        {"tag": "stomach pain",
+        "patterns": ["I have stomach pain?", "how to cure stomach pain?", "what to do when I have stomach pain?", "stomach pain"],
+        "responses":["Have clear fluids to sip, such as water, broth, or fruit juice diluted with water. Serve bland foods, such as saltine crackers, plain bread, dry toast, rice, gelatin, or applesauce. Avoid spicy or greasy foods and caffeinated or carbonated drinks until 48 hours after all symptoms have gone away."],
+        "context":[""]
+        },
         {"tag": "Abrasions",
          "patterns": ["how do you treat abrasions?", "Do Abrasions cause scars?", "Abrasions","Abrasion", "what to do if abrasions?", "Which medicine to apply for abrasions?", "How to cure abrasions?"],
          "responses": ["Begin with washed hands. Gently clean the area with cool to lukewarm water and mild soap. Remove dirt or other particles from the wound using sterilized tweezers. For a mild scrape that is not bleeding, leave the wound uncovered. If the wound is bleeding, use a clean cloth or bandage, and apply gentle pressure to the area to stop any bleeding. Cover a wound that bled with a thin layer of topical antibiotic ointment, like Bacitracin, or a sterile moisture barrier ointment, like Aquaphor. Cover it with a clean bandage or gauze. Gently clean the wound and change the ointment and bandage once per day. Watch the area for signs of infection, like pain or redness and swelling. See your doctor if you suspect infection."],
